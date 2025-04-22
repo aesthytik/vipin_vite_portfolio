@@ -1,9 +1,8 @@
-
 const stats = [
   { label: "Completed Projects", value: "30+" },
-  { label: "Years of Experience", value: "8+" },
+  { label: "Years of Experience", value: "5+" },
   { label: "Happy Clients", value: "36+" },
-  { label: "Awards Received", value: "10+" },
+  { label: "Coffees sipped", value: "999999+" },
 ];
 
 const Stats = () => {

@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Stacks from "@/components/Stacks";
 import Contact from "@/components/Contact";
+import { useTypewriter } from "@/hooks/use-typewriter";
 
 const Index = () => {
   return (
@@ -23,19 +24,26 @@ const Index = () => {
 
               <h1 className="text-4xl md:text-5xl font-display font-bold">
                 I'm Vipin Rawat,
-                <span className="block text-neon-green">
-                  Senior Frontend Developer
+                <span className="block text-neon-green min-h-[1.25em]">
+                  {useTypewriter([
+                    "Frontend AI Engineer",
+                    "Mobile App Developer",
+                    "Full Stack Engineer",
+                    "Software Consultant",
+                  ])}
                 </span>
                 Based in Manchester, UK.
               </h1>
 
               <p className="text-gray-400 text-lg leading-relaxed max-w-2xl">
-                I specialize in building high-performance web applications with
-                React, TypeScript, and Next.js. With extensive experience in
-                design systems, Web3, and cross-platform mobile development, I
-                focus on creating scalable and accessible solutions while
-                maintaining excellent user experiences. Currently pursuing a
-                Master's in Computer Science at Birmingham University.
+                Hey! With over 5 years of building apps, I love mixing AI with
+                frontend development to create some really cool stuff. With
+                expert React and Next.js skills in my toolkit, what really gets
+                me excited is making AI actually useful in real-world apps. I
+                hack around with blockchain tech too - built some fun DApps and
+                smart contracts. When I'm not coding, you'll probably catch me
+                tinkering with new AI models or breaking (and fixing!) things in
+                Web3 space.
               </p>
             </div>
 

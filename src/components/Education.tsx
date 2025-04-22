@@ -5,10 +5,10 @@ const educationData = [
     title: "Master's in Computer Science",
     institution: "Birmingham University",
     location: "United Kingdom",
-    period: "Dec 2023 - Dec 2024",
+    period: "Dec 2023 - Jan 2025",
     description:
-      "Currently pursuing advanced studies in Computer Science, focusing on modern software engineering practices, artificial intelligence, and distributed systems.",
-    currentGPA: "In Progress",
+      "Pursued advanced studies in Computer Science, focusing on modern software engineering practices, artificial intelligence, and distributed systems.",
+    currentGPA: "Distinction",
   },
   {
     title: "Bachelor's in Information Technology",
@@ -17,6 +17,7 @@ const educationData = [
     period: "Jun 2014 - July 2018",
     description:
       "Completed undergraduate studies with a focus on software development, database management, and web technologies. Built a strong foundation in computer science fundamentals and practical programming skills.",
+    currentGPA: "Distinction | 8.5/10",
   },
 ];
 

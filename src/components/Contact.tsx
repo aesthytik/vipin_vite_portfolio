@@ -48,7 +48,7 @@ const Contact = () => {
             <div>
               <div className="text-sm text-gray-400">Schedule a Call</div>
               <a
-                href="https://calendly.com/vipin-rawat"
+                href="https://cal.com/aesthytik-vipin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neon-green hover:underline"
@@ -60,7 +60,7 @@ const Contact = () => {
 
           <div className="flex gap-4">
             <a
-              href="https://linkedin.com/in/vipin-rawat"
+              href="https://www.linkedin.com/in/aesthytik/"
               target="_blank"
               rel="noopener noreferrer"
               className="glass-card p-4 flex items-center gap-2 hover:bg-gray-800/50 transition-colors"

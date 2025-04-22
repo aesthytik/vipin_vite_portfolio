@@ -11,7 +11,7 @@ const projects = [
       "Enhanced reusability and test coverage",
       "Migrated to functional components with hooks",
     ],
-    image: "/lovable-uploads/366f48d9-00e4-4f1a-9378-c743d7bab522.png",
+    image: "/placeholder.svg",
   },
   {
     title: "Strip Finance",
@@ -32,7 +32,7 @@ const projects = [
       "Built company-wide design system",
       "Integrated multiple blockchain networks",
     ],
-    image: "/lovable-uploads/4420c52c-c081-41a1-ad3f-6c303a9e5b1f.png",
+    image: "/placeholder.svg",
   },
   {
     title: "Kravein App",
@@ -53,7 +53,7 @@ const projects = [
       "Built cross-platform mobile apps",
       "Implemented real-time order tracking",
     ],
-    image: "/lovable-uploads/1887ffef-8998-4e3c-9760-d67b949db9f8.png",
+    image: "/placeholder.svg",
   },
   {
     title: "Mintmaster Labs",
@@ -74,7 +74,7 @@ const projects = [
       "Implemented wallet integrations",
       "Created NFT minting system with IPFS",
     ],
-    image: "/lovable-uploads/f287dc2f-f9dd-42b0-9617-da4e549f727c.png",
+    image: "/placeholder.svg",
   },
 ];
 

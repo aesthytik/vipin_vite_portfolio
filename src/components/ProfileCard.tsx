@@ -24,7 +24,7 @@ const ProfileCard = () => {
 
       <div className="flex justify-center space-x-4">
         <a
-          href="https://linkedin.com/in/vipin-rawat"
+          href="https://www.linkedin.com/in/aesthytik/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition-colors"
@@ -48,7 +48,7 @@ const ProfileCard = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        <a href="/vipin-rawat-cv.pdf" download>
+        <a href="/img/Vipin_CV_2025.pdf" download>
           <Button variant="outline" className="w-full">
             <Download className="mr-2 h-4 w-4" /> Download CV
           </Button>

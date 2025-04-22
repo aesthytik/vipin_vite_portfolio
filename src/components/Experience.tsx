@@ -1,8 +1,8 @@
 const experiences = [
   {
-    title: "Software Engineer",
+    title: "Fullstack Engineer",
     company: "The Admiral Network",
-    location: "Manchester",
+    location: "Manchester, UK",
     period: "June 2024 - Present",
     description: "Building tools and solutions for online store optimizations.",
     tech: "React, TypeScript, Next.js",
@@ -10,7 +10,7 @@ const experiences = [
   {
     title: "Senior Experience Engineer",
     company: "Publicis Sapient (Optum UHG Group)",
-    location: "UK",
+    location: "Hyderabad, India",
     period: "Jan 2023 - March 2024",
     description:
       "Led UI redesign and rebranding of Optum's client onboarding portal. Improved load times through server-side rendering, implemented modern UI with best practices for performance and accessibility. Mentored two mid-level engineers.",
