@@ -1,11 +1,12 @@
 const experiences = [
   {
-    title: "Fullstack Engineer",
+    title: "Fullstack AI Engineer",
     company: "The Admiral Network",
     location: "Manchester, UK",
     period: "June 2024 - Present",
-    description: "Building tools and solutions for online store optimizations.",
-    tech: "React, TypeScript, Next.js",
+    description:
+      "Building tools and solutions for online store optimizations with RAG and AI agents.",
+    tech: "React, TypeScript, Next.js, MCP, Supabase, OpenAI",
   },
   {
     title: "Senior Experience Engineer",
@@ -14,7 +15,7 @@ const experiences = [
     period: "Jan 2023 - March 2024",
     description:
       "Led UI redesign and rebranding of Optum's client onboarding portal. Improved load times through server-side rendering, implemented modern UI with best practices for performance and accessibility. Mentored two mid-level engineers.",
-    tech: "Next.js, TypeScript, Material UI, Drupal CMS",
+    tech: "Next.js, TypeScript, Material UI, Drupal CMS, Java",
     achievements: [
       "Improved web-app load time through server-side rendering",
       "Redesigned codebase for better reusability and test coverage",
