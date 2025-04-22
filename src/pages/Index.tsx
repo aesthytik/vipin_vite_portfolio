@@ -3,6 +3,9 @@ import ProfileCard from "@/components/ProfileCard";
 import Stats from "@/components/Stats";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Education from "@/components/Education";
+import Stacks from "@/components/Stacks";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
@@ -32,7 +35,10 @@ const Index = () => {
 
             <Stats />
             <Experience />
+            <Education />
             <Projects />
+            <Stacks />
+            <Contact />
           </div>
         </div>
       </div>
