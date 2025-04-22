@@ -2,17 +2,18 @@
 import ProfileCard from "@/components/ProfileCard";
 import Stats from "@/components/Stats";
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container py-12 md:py-20">
-        <div className="grid md:grid-cols-[350px,1fr] gap-8 lg:gap-12">
-          <div>
+      <div className="container h-screen py-12 md:py-20">
+        <div className="grid h-full md:grid-cols-[350px,1fr] gap-8 lg:gap-12">
+          <div className="md:sticky top-0 h-fit">
             <ProfileCard />
           </div>
           
-          <div className="space-y-12">
+          <div className="space-y-12 overflow-y-auto max-h-[calc(100vh-6rem)] pr-4 custom-scrollbar">
             <div className="space-y-4 appear appear-delay-1">
               <div className="flex items-center gap-2">
                 <span className="text-neon-green">👋 Say Hello</span>
@@ -31,6 +32,7 @@ const Index = () => {
 
             <Stats />
             <Experience />
+            <Projects />
           </div>
         </div>
       </div>
