@@ -9,6 +9,15 @@ export const useTypewriter = (
   const [text, setText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    const cursorTimer = setInterval(() => {
+      setShowCursor((prev) => !prev);
+    }, 530);
+
+    return () => clearInterval(cursorTimer);
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(
@@ -44,5 +53,5 @@ export const useTypewriter = (
     pauseTime,
   ]);
 
-  return text;
+  return text + (showCursor ? "|" : " ");
 };
