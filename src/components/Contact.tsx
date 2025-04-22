@@ -1,5 +1,11 @@
-
-import { Mail, Phone, MapPin } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Calendar,
+  LinkedinIcon,
+  GithubIcon,
+} from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -17,8 +23,8 @@ const Contact = () => {
           <div className="glass-card p-4 flex items-center gap-4">
             <Phone className="w-6 h-6 text-neon-green" />
             <div>
-              <div className="text-sm text-gray-400">Contact No</div>
-              <div>+(02) 4057 2930</div>
+              <div className="text-sm text-gray-400">Phone</div>
+              <div>+44 07445179134</div>
             </div>
           </div>
 
@@ -26,25 +32,73 @@ const Contact = () => {
             <Mail className="w-6 h-6 text-neon-green" />
             <div>
               <div className="text-sm text-gray-400">Email</div>
-              <div>ANDREW@WEBSITE.COM</div>
+              <div>aesthytik@gmail.com</div>
             </div>
           </div>
 
           <div className="glass-card p-4 flex items-center gap-4">
             <MapPin className="w-6 h-6 text-neon-green" />
             <div>
-              <div className="text-sm text-gray-400">Address</div>
-              <div>Beverly Hills, Los Angeles, California, USA</div>
+              <div className="text-sm text-gray-400">Location</div>
+              <div>Manchester, United Kingdom</div>
             </div>
+          </div>
+          <div className="glass-card p-4 flex items-center gap-4">
+            <Calendar className="w-6 h-6 text-neon-green" />
+            <div>
+              <div className="text-sm text-gray-400">Schedule a Call</div>
+              <a
+                href="https://calendly.com/vipin-rawat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neon-green hover:underline"
+              >
+                Book a Meeting
+              </a>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <a
+              href="https://linkedin.com/in/vipin-rawat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-4 flex items-center gap-2 hover:bg-gray-800/50 transition-colors"
+            >
+              <LinkedinIcon className="w-5 h-5 text-neon-green" />
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/aesthytik"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-4 flex items-center gap-2 hover:bg-gray-800/50 transition-colors"
+            >
+              <GithubIcon className="w-5 h-5 text-neon-green" />
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
 
-        <form className="glass-card p-6 space-y-4">
-          <Input placeholder="Full Name" />
-          <Input type="email" placeholder="Email" />
-          <Input placeholder="Phone Number" />
-          <Textarea placeholder="Message" className="min-h-[120px]" />
-          <Button className="w-full bg-neon-green hover:bg-neon-green/90 text-black">
+        <form
+          className="glass-card p-6 space-y-4"
+          action="https://formspree.io/f/aesthytik@gmail.com"
+          method="POST"
+        >
+          <Input name="name" placeholder="Full Name" required />
+          <Input name="email" type="email" placeholder="Email" required />
+          <Input name="company" placeholder="Company (Optional)" />
+          <Input name="role" placeholder="Role/Position (Optional)" />
+          <Textarea
+            name="message"
+            placeholder="Tell me about the opportunity..."
+            className="min-h-[120px]"
+            required
+          />
+          <Button
+            type="submit"
+            className="w-full bg-neon-green hover:bg-neon-green/90 text-black"
+          >
             Send Message
           </Button>
         </form>

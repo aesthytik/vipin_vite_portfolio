@@ -1,19 +1,23 @@
-
 import { School } from "lucide-react";
 
 const educationData = [
   {
-    title: "UI/UX Design Certification",
-    institution: "Interaction Design Foundation, Online",
-    period: "2018 - 2019",
-    description: "Gained hands-on experience in UX research, prototyping, wireframing, and usability testing, focusing on designing seamless, user-friendly digital experiences."
+    title: "Master's in Computer Science",
+    institution: "Birmingham University",
+    location: "United Kingdom",
+    period: "Dec 2023 - Dec 2024",
+    description:
+      "Currently pursuing advanced studies in Computer Science, focusing on modern software engineering practices, artificial intelligence, and distributed systems.",
+    currentGPA: "In Progress",
   },
   {
-    title: "Bachelor of Design in Interaction Design",
-    institution: "National University of Singapore, Singapore",
-    period: "2015 - 2017",
-    description: "Completed a comprehensive program focused on designing user-centered digital products, integrating aesthetics and functionality through practical interaction design principles."
-  }
+    title: "Bachelor's in Information Technology",
+    institution: "Punjab Technical University",
+    location: "India",
+    period: "Jun 2014 - July 2018",
+    description:
+      "Completed undergraduate studies with a focus on software development, database management, and web technologies. Built a strong foundation in computer science fundamentals and practical programming skills.",
+  },
 ];
 
 const Education = () => {
@@ -31,6 +35,12 @@ const Education = () => {
               <div>
                 <h3 className="font-display font-bold text-xl">{edu.title}</h3>
                 <p className="text-gray-400">{edu.institution}</p>
+                <p className="text-gray-500 text-sm">{edu.location}</p>
+                {edu.currentGPA && (
+                  <span className="inline-block mt-2 text-sm bg-neon-green/10 text-neon-green px-2 py-1 rounded">
+                    {edu.currentGPA}
+                  </span>
+                )}
               </div>
               <span className="text-sm text-neon-green bg-neon-green/10 px-3 py-1 rounded-full">
                 {edu.period}

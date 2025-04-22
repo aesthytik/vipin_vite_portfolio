@@ -1,16 +1,62 @@
-
 const experiences = [
   {
-    title: "Framer & UI/UX Designer",
-    company: "Circlum Tech",
-    period: "2023 - Present",
-    description: "Designing interactive prototypes with Framer, focusing on seamless user experiences and scalable solutions through user feedback and collaboration.",
+    title: "Software Engineer",
+    company: "The Admiral Network",
+    location: "Manchester",
+    period: "June 2024 - Present",
+    description: "Building tools and solutions for online store optimizations.",
+    tech: "React, TypeScript, Next.js",
   },
   {
-    title: "UI/UX Designer",
-    company: "Tech Studio",
-    period: "2021 - 2023",
-    description: "Led the design of multiple web and mobile applications, implementing modern design practices and conducting user research.",
+    title: "Senior Experience Engineer",
+    company: "Publicis Sapient (Optum UHG Group)",
+    location: "UK",
+    period: "Jan 2023 - March 2024",
+    description:
+      "Led UI redesign and rebranding of Optum's client onboarding portal. Improved load times through server-side rendering, implemented modern UI with best practices for performance and accessibility. Mentored two mid-level engineers.",
+    tech: "Next.js, TypeScript, Material UI, Drupal CMS",
+    achievements: [
+      "Improved web-app load time through server-side rendering",
+      "Redesigned codebase for better reusability and test coverage",
+      "Migrated from class components to functional components with hooks",
+    ],
+  },
+  {
+    title: "Senior Frontend Engineer",
+    company: "Strip Finance",
+    location: "British Virgin Islands",
+    period: "Jan 2022 - Jan 2023",
+    description:
+      "Built an NFT collateralization platform enabling users to earn interest on NFT assets. Improved user engagement by 15% through dashboard enhancements and new features.",
+    tech: "Next.js, TypeScript, GraphQL, MongoDB, Polygon, Ethers.js",
+    achievements: [
+      "Enhanced dashboard with new features like bar graphs and charts",
+      "Created company-wide design system and component library",
+      "Improved blockchain wallet connectivity with BSC and Polygon integration",
+    ],
+  },
+  {
+    title: "Lead Frontend Engineer",
+    company: "Kravein",
+    location: "Melbourne",
+    period: "Sep 2020 - Jan 2022",
+    description:
+      "Developed a social media platform for discovering restaurants and managing food orders. Reduced website load times by 40% through performance optimizations.",
+    tech: "Next.js, React Native, Flutter, TypeScript, GraphQL, Node.js",
+    achievements: [
+      "Migrated React Native codebase to modern functional components",
+      "Implemented Reanimated 3.0 for improved animation performance",
+      "Created multiplatform admin app using Flutter and GetX",
+    ],
+  },
+  {
+    title: "Associate Software Engineer",
+    company: "JC Software Solutions",
+    location: "India",
+    period: "Mar 2019 - Sep 2020",
+    description:
+      "Developed service-based applications focusing on user experience and functionality.",
+    tech: "React, Node.js, Express, MongoDB",
   },
 ];
 
@@ -41,12 +87,34 @@ const Experience = () => {
               <div>
                 <h3 className="font-display font-bold text-xl">{exp.title}</h3>
                 <p className="text-gray-400">{exp.company}</p>
+                <p className="text-gray-500 text-sm">{exp.location}</p>
               </div>
-              <span className="text-sm text-neon-green bg-neon-green/10 px-3 py-1 rounded-full">
+              <span className="text-sm text-neon-green bg-neon-green/10 px-3 py-1 rounded-full whitespace-nowrap">
                 {exp.period}
               </span>
             </div>
-            <p className="text-gray-300 leading-relaxed">{exp.description}</p>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              {exp.description}
+            </p>
+            {exp.achievements && (
+              <div className="mb-4">
+                <ul className="list-disc list-inside space-y-2 text-gray-300">
+                  {exp.achievements.map((achievement, i) => (
+                    <li key={i}>{achievement}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            <div className="flex flex-wrap gap-2">
+              {exp.tech.split(", ").map((tech, i) => (
+                <span
+                  key={i}
+                  className="text-xs bg-gray-700/50 text-gray-300 px-2 py-1 rounded"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
