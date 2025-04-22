@@ -1,11 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import ProfileCard from "@/components/ProfileCard";
+import Stats from "@/components/Stats";
+import Experience from "@/components/Experience";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background">
+      <div className="container py-12 md:py-20">
+        <div className="grid md:grid-cols-[350px,1fr] gap-8 lg:gap-12">
+          <div>
+            <ProfileCard />
+          </div>
+          
+          <div className="space-y-12">
+            <div className="space-y-4 appear appear-delay-1">
+              <div className="flex items-center gap-2">
+                <span className="text-neon-green">👋 Say Hello</span>
+              </div>
+              
+              <h1 className="text-4xl md:text-5xl font-display font-bold">
+                I'm John Anderson,
+                <span className="block text-neon-green">Frontend Developer</span>
+                Based in Los Angeles, CA.
+              </h1>
+              
+              <p className="text-gray-400 text-lg leading-relaxed max-w-2xl">
+                I specialize in creating clean, user-friendly digital experiences by blending creativity with functionality. With a strong background in interactive design, I focus on crafting designs that not only look great but also provide smooth and engaging user interactions, helping ideas come to life seamlessly.
+              </p>
+            </div>
+
+            <Stats />
+            <Experience />
+          </div>
+        </div>
       </div>
     </div>
   );
