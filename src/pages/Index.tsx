@@ -10,13 +10,13 @@ import { useTypewriter } from "@/hooks/use-typewriter";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container h-screen py-12 md:py-20">
+      <div className="container px-4 md:px-6 min-h-screen py-8 md:py-20">
         <div className="grid h-full md:grid-cols-[350px,1fr] gap-8 lg:gap-12">
-          <div className="md:sticky top-0 h-fit">
+          <div className="md:sticky md:top-0 h-fit">
             <ProfileCard />
           </div>
 
-          <div className="space-y-12 overflow-y-auto max-h-[calc(100vh-6rem)] pr-4 custom-scrollbar">
+          <div className="space-y-12 md:overflow-y-auto md:max-h-[calc(100vh-6rem)] md:pr-4 custom-scrollbar">
             <div className="space-y-4 appear appear-delay-1">
               <div className="flex items-center gap-2">
                 <span className="text-neon-green">👋 Say Hello</span>
