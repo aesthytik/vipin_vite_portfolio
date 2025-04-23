@@ -1,13 +1,23 @@
 const experiences = [
   {
+    title: "Software Engineer",
+    company: "Nuelo",
+    location: "Birmingham, UK",
+    period: "October 2024 - Present",
+    description:
+      "Creating web based solutions and maintaining high performance and accessibility standards. Collaborating with cross-functional teams to deliver user-friendly applications.",
+    tech: "Next.js, TypeScript, Tailwind CSS, Supabase",
+  },
+  {
     title: "Fullstack AI Engineer",
-    company: "The Admiral Network",
+    company: "The Admiral Network | Contract",
     location: "Manchester, UK",
     period: "June 2024 - Present",
     description:
       "Building tools and solutions for online store optimizations with RAG and AI agents.",
     tech: "React, TypeScript, Next.js, MCP, Supabase, OpenAI",
   },
+
   {
     title: "Senior Experience Engineer",
     company: "Publicis Sapient (Optum UHG Group)",

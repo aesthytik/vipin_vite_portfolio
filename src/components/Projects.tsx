@@ -46,21 +46,16 @@ const projects = [
   {
     title: "Igris BOT",
     category: "Web3 / NFT",
-    period: "Jun 2021 - Mar 2022",
-    description:
-      "Web3 platform for Hedera ecosystem users to manage crypto assets, mint NFTs and visualize portfolios.",
-    tech: [
-      "Next.js",
-      "Hedera",
-      "Tailwind CSS",
-      "TypeScript",
-      "GraphQL",
-      "Three.js",
-    ],
+    period: "Jun 2024 - Present",
+    description: "Simplest and safest way to transact on any chain",
+    tech: ["Next.js", "EVM"],
     achievements: [
-      "Built modular UI for Hedera ecosystem",
-      "Implemented wallet integrations",
-      "Created NFT minting system with IPFS",
+      "Built a cross-chain transaction platform",
+      "Integrated with multiple blockchain networks",
+      "Implemented user-friendly interface",
+      "Optimized performance for mobile devices",
+      "Enhanced security features for transactions",
+      "Developed real-time transaction tracking",
     ],
     image: "/img/igrisbot.png",
     url: "https://www.igris.bot/",
@@ -71,14 +66,7 @@ const projects = [
     period: "Jan 2022 - Present",
     description:
       "AI-powered platform for automating  Immigtration processes and providing personalized recommendations.",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Material UI",
-      "Node.js",
-      "MongoDB",
-      "OpenAI",
-    ],
+    tech: ["Next.js", "TypeScript", "POSTGRES", "OpenAI", "Gemini 2.5"],
     achievements: [
       "Built AI-driven recommendation engine",
       "Integrated with government APIs",
