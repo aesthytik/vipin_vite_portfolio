@@ -1,19 +1,5 @@
 const projects = [
   {
-    title: "Optum UHG Portal",
-    category: "Enterprise Healthcare",
-    period: "Jan 2023 - Present",
-    description:
-      "UI redesign and rebranding of Optum's client onboarding portal with focus on performance and accessibility metrics.",
-    tech: ["Next.js", "TypeScript", "Material UI", "Drupal CMS"],
-    achievements: [
-      "Improved load time with server-side rendering",
-      "Enhanced reusability and test coverage",
-      "Migrated to functional components with hooks",
-    ],
-    image: "/placeholder.svg",
-  },
-  {
     title: "Strip Finance",
     category: "Web3 / DeFi",
     period: "Jan 2022 - Jan 2023",
@@ -32,7 +18,8 @@ const projects = [
       "Built company-wide design system",
       "Integrated multiple blockchain networks",
     ],
-    image: "/placeholder.svg",
+    image: "/img/stripfinance.png",
+    url: "https://www.strip.finance/",
   },
   {
     title: "Kravein App",
@@ -53,10 +40,11 @@ const projects = [
       "Built cross-platform mobile apps",
       "Implemented real-time order tracking",
     ],
-    image: "/placeholder.svg",
+    image: "/img/kravein.png",
+    url: "https://www.kravein.com.au/",
   },
   {
-    title: "Mintmaster Labs",
+    title: "Igris BOT",
     category: "Web3 / NFT",
     period: "Jun 2021 - Mar 2022",
     description:
@@ -74,7 +62,118 @@ const projects = [
       "Implemented wallet integrations",
       "Created NFT minting system with IPFS",
     ],
-    image: "/placeholder.svg",
+    image: "/img/igrisbot.png",
+    url: "https://www.igris.bot/",
+  },
+  {
+    title: "Mignomic",
+    category: "Immigration Tech",
+    period: "Jan 2022 - Present",
+    description:
+      "AI-powered platform for automating  Immigtration processes and providing personalized recommendations.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Material UI",
+      "Node.js",
+      "MongoDB",
+      "OpenAI",
+    ],
+    achievements: [
+      "Built AI-driven recommendation engine",
+      "Integrated with government APIs",
+      "Implemented user-friendly dashboard",
+    ],
+    image: "/img/mignomic.png",
+    url: "https://www.mignomic.com/",
+  },
+  {
+    title: "Maple Kitchens",
+    category: "Kitchens tools and worktops",
+    period: "Jan 2022 - Present",
+    description:
+      "E-commerce platform for kitchen tools and worktops with a focus on user experience and performance.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Material UI",
+      "Node.js",
+      "MongoDB",
+      "GraphQL",
+    ],
+    achievements: [
+      "Built responsive e-commerce platform",
+      "Implemented real-time inventory management",
+      "Optimized performance for mobile devices",
+    ],
+    image: "/img/maplekitchens.png",
+    url: "https://www.maplekitchensandbathrooms.co.uk/",
+  },
+  {
+    title: "ZEIQ",
+    category: "Company portfolio",
+    period: "Jan 2018 - Present",
+    description:
+      "Web development company specializing in creating high-performance websites and applications.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Material UI",
+      "Node.js",
+      "MongoDB",
+      "GraphQL",
+    ],
+    achievements: [
+      "Built portfolio showcasing projects",
+      "Implemented SEO best practices",
+      "Optimized performance for search engines",
+    ],
+    image: "/img/zeiqco.png",
+    url: "https://www.zeiq.co.uk/",
+  },
+  {
+    title: "Leap wallet",
+    category: "Web3 / Wallet",
+    period: "Jan 2022 - Present",
+    description:
+      "Web3 mobile wallet wallet for managing crypto assets and NFTs with a focus on user experience and security.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Material UI",
+      "Node.js",
+      "MongoDB",
+      "GraphQL",
+    ],
+    achievements: [
+      "Built secure wallet for crypto assets",
+      "Implemented multi-chain support",
+      "Optimized performance for mobile devices",
+    ],
+    image: "/img/leap.png",
+    url: "https://www.leapwallet.io/",
+  },
+  {
+    title: "OPTUM UHG portal",
+    category: "Healthcare",
+    period: "Jan 2023 - Present",
+    description:
+      "Healthcare portal for managing patient information and appointments with a focus on user experience and performance.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Material UI",
+      "Node.js",
+      "MongoDB",
+      "GraphQL",
+    ],
+    achievements: [
+      "Built responsive healthcare portal",
+      "Implemented real-time appointment management",
+      "Optimized performance for mobile devices",
+    ],
+    image: "/img/rxcomet.png",
+    url: "https://rxcomet.optumrx.com/",
   },
 ];
 
@@ -95,12 +194,18 @@ const Projects = () => {
             d="M13 10V3L4 14h7v7l9-11h-7z"
           />
         </svg>
-        Projects
+        Notable Projects
       </h2>
 
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
-          <div key={index} className="glass-card group overflow-hidden">
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+            className="glass-card group overflow-hidden block hover:no-underline"
+          >
             <div className="relative aspect-video overflow-hidden">
               <img
                 src={project.image}
@@ -110,8 +215,21 @@ const Projects = () => {
             </div>
             <div className="p-6 space-y-4">
               <div>
-                <h3 className="text-xl font-display font-bold mb-1">
+                <h3 className="text-xl font-display font-bold mb-1 flex items-center gap-2">
                   {project.title}
+                  <svg
+                    className="w-4 h-4 text-neon-green"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
                 </h3>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-neon-green">{project.category}</span>
@@ -142,7 +260,7 @@ const Projects = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
