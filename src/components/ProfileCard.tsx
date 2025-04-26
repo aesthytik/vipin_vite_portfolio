@@ -48,7 +48,7 @@ const ProfileCard = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        <a href="/img/Vipin_CV_2025.pdf" download>
+        <a href="/img/Vipin_IT_Resume.pdf" download>
           <Button variant="outline" className="w-full">
             <Download className="mr-2 h-4 w-4" /> Download CV
           </Button>

@@ -46,7 +46,7 @@ const projects = [
   {
     title: "Igris BOT",
     category: "Web3 / NFT",
-    period: "Jun 2024 - Present",
+    period: "Dec 2024 - Present",
     description: "Simplest and safest way to transact on any chain",
     tech: ["Next.js", "EVM"],
     achievements: [
@@ -63,10 +63,18 @@ const projects = [
   {
     title: "Mignomic",
     category: "Immigration Tech",
-    period: "Jan 2022 - Present",
+    period: "Jan 2025 - Present",
     description:
       "AI-powered platform for automating  Immigtration processes and providing personalized recommendations.",
-    tech: ["Next.js", "TypeScript", "POSTGRES", "OpenAI", "Gemini 2.5"],
+    tech: [
+      "Next.js",
+      "RAG",
+      "Vercel SDK",
+      "TypeScript",
+      "POSTGRES",
+      "OpenAI",
+      "Gemini 2.5",
+    ],
     achievements: [
       "Built AI-driven recommendation engine",
       "Integrated with government APIs",
@@ -78,7 +86,7 @@ const projects = [
   {
     title: "Maple Kitchens",
     category: "Kitchens tools and worktops",
-    period: "Jan 2022 - Present",
+    period: "Jan 2023 - June 2024",
     description:
       "E-commerce platform for kitchen tools and worktops with a focus on user experience and performance.",
     tech: [
@@ -124,7 +132,7 @@ const projects = [
     category: "Web3 / Wallet",
     period: "Jan 2022 - Present",
     description:
-      "Web3 mobile wallet wallet for managing crypto assets and NFTs with a focus on user experience and security.",
+      "Built on cosmos SDK, Leap Wallet is a multi-chain wallet that allows users to manage their crypto assets securely and efficiently.",
     tech: [
       "Next.js",
       "TypeScript",
