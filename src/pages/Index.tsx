@@ -36,14 +36,17 @@ const Index = () => {
               </h1>
 
               <p className="text-gray-400 text-lg leading-relaxed max-w-2xl">
-                Hey! With over 5 years of building apps, I love mixing AI with
-                frontend development to create some really cool stuff. With
-                expert React and Next.js skills in my toolkit, what really gets
-                me excited is making AI actually useful in real-world apps. I
-                hack around with blockchain tech too - built some fun DApps and
-                smart contracts. When I'm not coding, you'll probably catch me
-                tinkering with new AI models or breaking (and fixing!) things in
-                Web3 space.
+                Currently working as a Software Engineer at Nuelo, I bring over
+                5 years of experience specializing in sophisticated web
+                applications with AI integration. At Nuelo, I create web-based
+                solutions while maintaining high performance and accessibility
+                standards. I leverage my expertise in React and Next.js to
+                develop enterprise-grade solutions. My passion lies in
+                implementing practical AI solutions in production environments,
+                and I have a proven track record of architecting scalable
+                applications. I also explore blockchain technology, developing
+                DApps and smart contracts. Beyond coding, I'm deeply involved in
+                AI research and actively contribute to the Web3 ecosystem.
               </p>
             </div>
 
