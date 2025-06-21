@@ -1,63 +1,63 @@
 const experiences = [
   {
-    title: "Software Engineer",
-    company: "Nuelo",
-    location: "Birmingham, UK",
-    period: "October 2024 - Present",
+    title: "Sr Frontend engineer",
+    company: "DEPT agency",
+    location: "Manchester",
+    period: "June 2025 - Present",
     description:
-      "Creating web based solutions and maintaining high performance and accessibility standards. Collaborating with cross-functional teams to deliver user-friendly applications.",
-    tech: "Next.js, TypeScript, Tailwind CSS, Supabase",
-  },
-  {
-    title: "Fullstack AI Engineer",
-    company: "The Admiral Network | Contract",
-    location: "Manchester, UK",
-    period: "June 2024 - Present",
-    description:
-      "Building tools and solutions for online store optimizations with RAG and AI agents.",
-    tech: "React, TypeScript, Next.js, MCP, Supabase, OpenAI",
-  },
-
-  {
-    title: "Senior Experience Engineer",
-    company: "Publicis Sapient (Optum UHG Group)",
-    location: "Hyderabad, India",
-    period: "Jan 2023 - March 2024",
-    description:
-      "Led UI redesign and rebranding of Optum's client onboarding portal. Improved load times through server-side rendering, implemented modern UI with best practices for performance and accessibility. Mentored two mid-level engineers.",
-    tech: "Next.js, TypeScript, Material UI, Drupal CMS, Java",
+      "Worked with EBAY US to develop AI agentic flows for developing tools for Email templates, improved development workflows using locally managed NPM libraries, and collaborated with the EBAY US team to enhance user experience with in-house AI models.",
+    tech: "React, Storybook, LLM, GraphQL, MobX",
     achievements: [
-      "Improved web-app load time through server-side rendering",
-      "Redesigned codebase for better reusability and test coverage",
-      "Migrated from class components to functional components with hooks",
+      "Developed AI agentic flows for email template tools in collaboration with EBAY US.",
+      "Improved development workflows by utilizing locally managed NPM libraries.",
+      "Enhanced user experience by integrating in-house AI models with the EBAY US team.",
     ],
   },
   {
-    title: "Senior Frontend Engineer",
+    title: "Senior full-stack developer",
+    company: "ACE FOODS",
+    location: "London",
+    period: "Jan 2025 - June 2025",
+    description:
+      "Led the development of a robust and scalable full-stack application using Next.js, focusing on seamless user experience, optimized performance, and efficient data handling. Key responsibilities included creating multi-platform admin panels and comprehensive dashboards.",
+    tech: "Next.js, TypeScript, Supabase",
+    achievements: [
+      "Developed a robust and scalable full-stack application using Next.js for both front-end and back-end.",
+      "Designed for a seamless user experience with optimized performance and efficient data handling.",
+      "Created multi-platform admin panels for order handling, enabling efficient management and real-time tracking.",
+      "Developed comprehensive dashboards for visualizing order statuses, sales data, and inventory levels.",
+      "Integrated secure authentication and authorization mechanisms for sensitive order information.",
+      "Implemented features for order modification, cancellation, and fulfillment, streamlining administrative workflows.",
+      "Designed admin panels with a focus on usability and responsiveness across various devices.",
+    ],
+  },
+  {
+    title: "Senior Frontend Engineer, Web3 and NFTs",
     company: "Strip Finance",
     location: "British Virgin Islands",
     period: "Jan 2022 - Jan 2023",
     description:
-      "Built an NFT collateralization platform enabling users to earn interest on NFT assets. Improved user engagement by 15% through dashboard enhancements and new features.",
+      "A more functional & slicker dashboard helped improve user engagement rate by 15%.",
     tech: "Next.js, TypeScript, GraphQL, MongoDB, Polygon, Ethers.js",
     achievements: [
-      "Enhanced dashboard with new features like bar graphs and charts",
-      "Created company-wide design system and component library",
-      "Improved blockchain wallet connectivity with BSC and Polygon integration",
+      "Enhanced an old dashboard and added new features like bar graphs and charts.",
+      "Introduced atomic web design concepts for the portal with special care to accessibility, usability, and testability.",
+      "Worked with product designers to create a design system & component library published for company-wide use.",
+      "Enhanced the web3 wallet connectivity by adding BSC and Polygon blockchains and handled blockchain events.",
+      "Improved the product's user experience by solving inconsistencies and replacing legacy components.",
     ],
   },
   {
-    title: "Lead Frontend Engineer",
+    title: "Lead Frontend Engineer, Customer, and Admin Apps",
     company: "Kravein",
     location: "Melbourne",
     period: "Sep 2020 - Jan 2022",
     description:
-      "Developed a social media platform for discovering restaurants and managing food orders. Reduced website load times by 40% through performance optimizations.",
+      "Reduced website load times by up to 40% because of performance improvements.",
     tech: "Next.js, React Native, Flutter, TypeScript, GraphQL, Node.js",
     achievements: [
-      "Migrated React Native codebase to modern functional components",
-      "Implemented Reanimated 3.0 for improved animation performance",
-      "Created multiplatform admin app using Flutter and GetX",
+      "Owned the migration process of old react native codebase to modern functional components.",
+      "Implemented reanimated 3.0 animations to improve the animation performance of cross-platform apps.",
     ],
   },
   {
